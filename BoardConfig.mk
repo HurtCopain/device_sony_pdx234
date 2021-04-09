@@ -25,5 +25,9 @@ TARGET_SCREEN_DENSITY := 420
 # Recovery
 BOARD_USES_FULL_RECOVERY_IMAGE := true
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_pdx234
+TARGET_RECOVERY_DEVICE_MODULES := libinit_pdx234
+
 # inherit from the proprietary version
 -include vendor/sony/pdx234/BoardConfigVendor.mk
