@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_pdx234.mk
+    $(LOCAL_DIR)/evolution_pdx234.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_pdx234-user \
-    aosp_pdx234-userdebug \
-    aosp_pdx234-eng
+    evolution_pdx234-user \
+    evolution_pdx234-userdebug \
+    evolution_pdx234-eng

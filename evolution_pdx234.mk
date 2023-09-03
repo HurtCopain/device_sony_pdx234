@@ -21,13 +21,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device.mk
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit some common PixelExperience stuffs.
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_SUPPORTS_CALL_RECORDING := true
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_USES_BLUR := true
+
+WITH_GAPPS := true
+
+# Inherit some common Evolution X stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 TARGET_CHARGER_RESOURCE_COPY_OUT := $(TARGET_COPY_OUT_VENDOR)
 
@@ -45,7 +46,7 @@ TARGET_BOOT_ANIMATION_RES := 1440
 
 TARGET_USES_AOSP_RECOVERY := true
 
-PRODUCT_NAME := aosp_pdx234
+PRODUCT_NAME := evolution_pdx234
 PRODUCT_DEVICE := pdx234
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_BRAND := Sony
