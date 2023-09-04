@@ -38,6 +38,7 @@ TARGET_SUPPORTS_LILY_EXPERIENCE := true
 TARGET_NOT_SUPPORTS_GOOGLE_BATTERY := true
 TARGET_FLATTEN_APEX := false
 TARGET_GBOARD_KEY_HEIGHT := 1.1
+MAINLINE_INCLUDE_BT_MODULE := false
 $(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1440
