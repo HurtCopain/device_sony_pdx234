@@ -27,6 +27,9 @@ TARGET_USES_BLUR := true
 
 WITH_GAPPS := true
 
+TARGET_INCLUDE_SONY_CAMERA := true
+TARGET_INCLUDE_SONY_MUSIC := true
+
 # Inherit some common Evolution X stuff.
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
