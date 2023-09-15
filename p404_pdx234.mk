@@ -21,9 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device.mk
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-TARGET_BUILD_APERTURE_CAMERA := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_BLUR := true
 
 WITH_GAPPS := true
@@ -36,21 +34,13 @@ $(call inherit-product, vendor/404/configs/common.mk)
 
 TARGET_CHARGER_RESOURCE_COPY_OUT := $(TARGET_COPY_OUT_VENDOR)
 
-# Additional Pixel stuffs
-TARGET_INCLUDE_CARRIER_SETTINGS := true
-TARGET_INCLUDE_CAMERA_GO := true
-TARGET_SUPPORTS_LILY_EXPERIENCE := true
-TARGET_NOT_SUPPORTS_GOOGLE_BATTERY := true
-TARGET_FLATTEN_APEX := false
-TARGET_GBOARD_KEY_HEIGHT := 1.1
-MAINLINE_INCLUDE_BT_MODULE := false
-$(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
-
 TARGET_BOOT_ANIMATION_RES := 1440
 
 TARGET_USES_AOSP_RECOVERY := true
 
-PRODUCT_NAME := evolution_pdx234
+TARGET_BOARD_PLATFORM := kalama
+
+PRODUCT_NAME := p404_pdx234
 PRODUCT_DEVICE := pdx234
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_BRAND := Sony
