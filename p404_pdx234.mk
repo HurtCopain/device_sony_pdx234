@@ -31,8 +31,8 @@ WITH_GAPPS := true
 TARGET_INCLUDE_SONY_CAMERA := true
 TARGET_INCLUDE_SONY_MUSIC := true
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit from Project 404 vendor config
+$(call inherit-product, vendor/404/configs/common.mk)
 
 TARGET_CHARGER_RESOURCE_COPY_OUT := $(TARGET_COPY_OUT_VENDOR)
 
