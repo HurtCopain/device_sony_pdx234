@@ -27,7 +27,17 @@ TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_CALL_RECORDING := true
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+# Inherit some uncommon/possibly irrelevant Evolution X stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+
+WITH_GAPPS := true
+
+TARGET_USES_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_BUILD_APERTURE_CAMERA := true
+TARGET_INCLUDE_SONY_CAMERA := true
+TARGET_INCLUDE_SONY_MUSIC := true
 
 TARGET_CHARGER_RESOURCE_COPY_OUT := $(TARGET_COPY_OUT_VENDOR)
 
@@ -38,6 +48,7 @@ TARGET_SUPPORTS_LILY_EXPERIENCE := true
 TARGET_NOT_SUPPORTS_GOOGLE_BATTERY := true
 TARGET_FLATTEN_APEX := false
 TARGET_GBOARD_KEY_HEIGHT := 1.1
+$(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
 
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.camera.privapp.list=com.google.android.apps.cameralite \
@@ -49,7 +60,7 @@ TARGET_BOOT_ANIMATION_RES := 1440
 
 TARGET_USES_AOSP_RECOVERY := true
 
-PRODUCT_NAME := aosp_pdx234
+PRODUCT_NAME := evolution_pdx234
 PRODUCT_DEVICE := pdx234
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_BRAND := Sony
