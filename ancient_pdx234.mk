@@ -28,10 +28,12 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_CALL_RECORDING := true
 
-# Inherit some uncommon/possibly irrelevant Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common AncientOs stuff.
+$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
 
-WITH_GAPPS := true
+#Official Flags
+ANCIENT_OFFICIAL=true
+ANCIENT_GAPPS=true
 
 TARGET_USES_BLUR := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
@@ -60,7 +62,7 @@ TARGET_BOOT_ANIMATION_RES := 1440
 
 TARGET_USES_AOSP_RECOVERY := true
 
-PRODUCT_NAME := evolution_pdx234
+PRODUCT_NAME := ancient_pdx234
 PRODUCT_DEVICE := pdx234
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_BRAND := Sony

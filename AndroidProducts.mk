@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_pdx234.mk
+    $(LOCAL_DIR)/ancient_pdx234.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_pdx234-user \
-    evolution_pdx234-userdebug \
-    evolution_pdx234-eng
+    ancient_pdx234-user \
+    ancient_pdx234-userdebug \
+    ancient_pdx234-eng
