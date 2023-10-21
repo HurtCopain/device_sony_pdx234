@@ -70,8 +70,8 @@ static const char *device_prop_key[] =
           "marketname", "manufacturer", "mod_device", nullptr };
 
 static const char *device_prop_val[] =
-        { "Sony", "pdx234", "Pdx234", "Pdx234", "pdx234",
-          "Xperia 1 V", "Sony", "pdx234", nullptr };
+        { "Sony", "pdx237", "Pdx237", "Pdx237", "pdx237",
+          "Xperia 5 V", "Sony", "pdx237", nullptr };
 
 /* From Magisk@native/jni/magiskhide/hide_utils.c */
 static const char *cts_prop_key[] =
@@ -118,8 +118,8 @@ static void workaround_cts_properties() {
 }
 
 void vendor_load_properties() {
-    const char *fingerprint = "XQ-DQ72-user 13 67.0.A.4.79 067000A004007900521143226 release-keys";
-    const char *description = "Sony/XQ-DQ72/XQ-DQ72:13/67.0.A.4.79/067000A004007900521143226:user/release-keys";
+    const char *fingerprint = "XQ-DE54-user 13 67.0.A.6.60 TKQ1.221114.001 release-keys";
+    const char *description = "Sony/XQ-DE54/XQ-DE54:13/67.0.A.6.60/0TKQ1.221114.001:user/release-keys";
 
     full_property_override("build.fingerprint", fingerprint, false);
     full_property_override("build.description", description, false);

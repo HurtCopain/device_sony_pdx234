@@ -17,17 +17,17 @@
 # Inherit from sony sm8550-common
 -include device/sony/sm8550-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/sony/pdx234
+DEVICE_PATH := device/sony/pdx237
 
 # Display
 TARGET_SCREEN_DENSITY := 420
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_pdx234
-TARGET_RECOVERY_DEVICE_MODULES := libinit_pdx234
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_pdx237
+TARGET_RECOVERY_DEVICE_MODULES := libinit_pdx237
 
 # Recovery
 BOARD_USES_FULL_RECOVERY_IMAGE := true
 
 # inherit from the proprietary version
--include vendor/sony/pdx234/BoardConfigVendor.mk
+-include vendor/sony/pdx237/BoardConfigVendor.mk

@@ -20,7 +20,7 @@ import os
 import sys
 from hashlib import sha1
 
-device = 'pdx234'
+device = 'pdx237'
 vendor = 'sony'
 
 with open('proprietary-files.txt', 'r') as f:
