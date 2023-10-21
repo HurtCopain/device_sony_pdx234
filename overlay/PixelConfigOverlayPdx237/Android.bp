@@ -1,5 +1,5 @@
 runtime_resource_overlay {
-    name: "PixelConfigOverlayPdx234",
+    name: "PixelConfigOverlayPdx237",
     certificate: "platform",
     sdk_version: "current",
     product_specific: true
