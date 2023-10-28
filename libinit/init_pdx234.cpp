@@ -55,6 +55,9 @@ void property_override(char const prop[], char const value[], bool add = true) {
 
 void vendor_load_properties() {
 
+    // Enable UI blur
+    property_override("ro.surface_flinger.supports_background_blur", "1");
+    
     // Set dalvik heap configuration
     std::string heapstartsize, heapgrowthlimit, heapsize, heapminfree,
 			heapmaxfree, heaptargetutilization;
