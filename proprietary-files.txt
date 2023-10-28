@@ -233,9 +233,6 @@ vendor/firmware/R-cs35l45-dsp1-spk-cali.wmfw
 vendor/firmware/R-cs35l45-dsp1-spk-prot.bin
 vendor/firmware/R-cs35l45-dsp1-spk-prot.wmfw
 
-# Touchscreen firmware
-vendor/firmware/touch_module_id_0x02.img
-
 # Wifi firmware
 vendor/etc/wifi/wifi_txpower.conf
 vendor/etc/wifi/wpa_supplicant.conf
