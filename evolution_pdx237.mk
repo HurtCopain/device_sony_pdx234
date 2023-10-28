@@ -55,6 +55,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.camera.privapp.list=com.google.android.apps.cameralite
 
 $(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
