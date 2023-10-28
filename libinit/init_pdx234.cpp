@@ -55,6 +55,12 @@ void property_override(char const prop[], char const value[], bool add = true) {
 
 void vendor_load_properties() {
 
+    // Set hardware revision
+    property_override("ro.boot.hardware.revision", GetProperty("ro.boot.hwversion", "").c_str());
+
+    // Set product name to show when connect through usb
+    property_override("vendor.usb.product_string", GetProperty("ro.product.marketname", "").c_str());
+    
     // Enable UI blur
     property_override("ro.launcher.blur.appLaunch", "1");
     property_override("ro.surface_flinger.supports_background_blur", "1");
